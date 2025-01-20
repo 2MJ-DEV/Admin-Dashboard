@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Runic&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        /* outline: 1px solid; */
+}
+
+body {
+        background-color: #e1e1e1;
+}
+
+.container {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        width: 100%;
+        height: 100vh;
+        /* gap: 50px; */
+}
+
+/* ================================ left container========================= */
+.left-container {
+        background-color: #4090d1;
+        height: 100%;
+        padding: 20px;
+        box-shadow: 0 0 5px #000;
+}
+
+.title {
+        display: grid;
+        grid-template-columns: 25px 1fr;
+        align-items: center;
+        gap: 10px;
+}
+
+.title span {
+        font-size: 22px;
+        font-weight: bold;
+        color: white;
+}
+
+.title ion-icon {
+        font-size: 28px;
+        color: white;
+}
+
+.title-link {
+        display: grid;
+        grid-template-columns: 25px 1fr;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        margin-bottom: 15px;
+}
+
+.link {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
+        font-size: 15px;
+        font-weight: 500;
+}
+
+.left-title {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+}
+
+/* ================================ Fin left container========================= */
+
+
+/* ================================ Right container========================= */
+.right-container-top {
+        grid-area: right-container-top;
+}
+
+.right-container-bottom {
+        grid-area: right-container-bottom;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        padding: 20px;
+}
+
+.right-container {
+        padding: 0;
+        display: grid;
+        gap: 10px;
+        /* grid-template-columns: 20% 80%; */
+        grid-template-rows: auto;
+        grid-template-areas:
+                "right-container-top"
+                "right-container-bottom";
+}
+
+.right-container-top {
+        display: grid;
+}
+
+.nav-bar {
+        background-color: rgb(255, 255, 255);
+        padding: 50px;
+        display: grid;
+        margin-top: -30px;
+}
+
+
+.Project {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+}
+
+.grid-item {
+        background-color: #fff;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        border-left: #ffcc4d 5px solid;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+}
+
+.grid-item span {
+        font-weight: 700;
+        font-size: 1rem;
+}
+
+.grid-item p {
+        font-size: 0.8rem;
+        color: #747474;
+        margin-bottom: 10px;
+}
+
+p {
+        display: block;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+}
+
+.icons {
+        margin-top: 30px;
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+}
+
+.Annoucements {
+        width: 100%;
+}
+
+.Annoucements p {
+        color: #747474;
+        margin-bottom: 10px;
+}
+
+.Annoucements-radius {
+        background-color: #fff;
+        font-size: 0.7rem;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+}
+
+.Annoucements-item {
+        margin-top: 10px;
+}
+
+.Annoucements-item span {
+        font-weight: 700;
+        font-size: 0.7rem;
+        margin-bottom: 0;
+}
+
+.Trending-radius {
+        display: grid;
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 30px;
+}
+
+/* .profile-perso {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+} */
+
+.profile-perso h5 {
+        font-size: 1rem;
+}
+
+.profile-perso p {
+        font-size: 0.8rem;
+        color: #747474;
+}
+
+.rights-parts {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 20px;
+}
+
+h3 {
+        margin-bottom: 10px;
+}
+
+button {
+        background-color: #4090d1;
+        color: white;
+        border: none;
+        border-radius: 31px;
+        width: 78px;
+        height: 30px;
+        padding: 5px 9px;
+}
+
+.main-header-top-left {
+        grid-area: main-header-top;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1.5fr 0.5fr;
+}
+
+.nav-part-1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+}
+
+.nav-bar-Profil {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: -25px;
+}
+
+.nav-bar-Profil ul {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-grow: 1;
+        gap: 10px;
+        padding: 10px 30px;
+        margin-left: 20px;
+        border-radius: 30px;
+        transition: background-color 0.9s ease-in-out;
+}
+
+.nav-bar-Profil ul li {
+        list-style: none;
+        text-decoration: none;
+}
+
+.nav-bar-Profil ul li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 0.9rem;
+        font-weight: 500;
+        background-color: #4090d1;
+}
+
+.nav-bar-Profil ul li a:hover {
+        background-color: #818588;
+}
+
+.Profil img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+}
+
+.Profil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+}
+
+.Profil span {
+        font-size: 0.9rem;
+        font-weight: 700;
+}
+.Big-Profil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+}
+
+.Big-Profil img {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+}
+
+.Big-Profil span {
+        font-size: 0.8rem;
+        font-weight: 500;
+}
+
+.Big-Profil h2 {
+        font-size: 1.5rem;
+        font-weight: 800;
+}
+
+
+.button-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 10px;
+}
+
+.button-list li a {
+        display: inline-block;
+        padding: 5px 15px;
+        color: white;
+        background-color: #008cff;
+        text-decoration: none;
+        border: none;
+        border-radius: 15px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+}
+
+.button-list li a:hover {
+        background-color: #005bb5;
+}
+
+.main-header-top-left {
+        display: flex;
+        align-items: center;
+}
+
+.main-header-top-left form {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+        padding: 2px 10px;
+        background-color: #f9f9f9;
+        transition: border-color 0.3s ease;
+        width: 430px;
+}
+
+.main-header-top-left form:hover {
+        border-color: #008cff;
+}
+
+.main-header-top-left form ion-icon {
+        font-size: 20px;
+        color: #999;
+}
+
+.main-header-top-left form input[type="search"] {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        flex: 1;
+        background-color: transparent;
+        padding: 5px;
+}
+
+.main-header-top-left form input::placeholder {
+        color: #aaa;
+        font-style: italic;
+}
+
+.main-header-top-left .search {
+        font-size: 20px;
+}
+
+.Trending-profile {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        margin-bottom: 10px;
+}
+
+.Trending-profile img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+}
+
+.Trending-profile span {
+        font-size: 0.7rem;
+        font-weight: 700;
+}
+/* ================================ Fin Right container========================= */
